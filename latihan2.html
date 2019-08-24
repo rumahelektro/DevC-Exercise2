@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Facebook DevC
+    </title>
+    <link rel="stylesheet" href="./style3.css"
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<!-- contoh doang -->
+<body>
+<h1>Kalkulator SD - Kelas 1 - buat Dzahin</h1>
+
+<h3>Penjumlahan:</h3>
+<br />
+<!-- Penjumlahan -->
+<input type="text" name="nilai" id="nilai1" placeholder="Angka1"><br/>
+		<h1>+</h1>
+    <input type="text" name="nilai" id="nilai2"  placeholder="Angka2"> <br/><br/>
+		<input type="submit" onclick="jumlah()" value="KLIK HASILNYA">
+    <p id="isi"></p>
+<br> </br>
+    <!-- Pengurangan -->
+    <h3>Pengurangan:</h3>
+    <br />
+    <input type="text" name="nilai" id="nilai1" placeholder="Angka1"><br/>
+        <h1>-</h1>
+        <input type="text" name="nilai" id="nilai2"  placeholder="Angka2"> <br/><br/>
+        <input type="submit" onclick="kurang()" value="KLIK HASILNYA">
+        <p id="isi"></p>
+
+<script type="text/javascript">
+	// Penjumlahan
+  	function jumlah(){
+
+			var satu = document.getElementById('nilai1').value; 
+			var dua = document.getElementById('nilai2').value;
+			var total = parseInt(satu) + parseInt(dua);
+  
+			document.getElementById('isi').innerHTML = " Hasilnya adalah " +  total;
+		}
+
+// Pengurangan
+    function kurang(){
+
+var satu = document.getElementById('nilai1').value; 
+var dua = document.getElementById('nilai2').value;
+var total = parseInt(satu) - parseInt(dua);
+
+document.getElementById('isi').innerHTML = " Hasilnya adalah " +  total;
+}
+</script>
+</body>
+</html>
